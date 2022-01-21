@@ -37,7 +37,10 @@
   
    [![DEVIL](https://i.imgur.com/CqEfYef.jpeg)](https://github.com/D-E-V-I-L-8)
 ----|
+<div align="center">
+
    [`DEVIL`](https://github.com/D-E-V-I-L-8)
+
    `Developer`
                                   
   </div
