@@ -11,7 +11,13 @@
 ## `JOIN AMMU WHATSAPP GROUP`
 
   [![join](https://github.com/Alien-alfa/PublicBot/blob/main/wlogo.svg.png)](https://chat.whatsapp.com/Fz6MPHhRIl840px7eRuYYr)
- 
+
+
+## `FORK AND CHANGE SETTINGS`
+
+- OWNER NUMBER [`CLICK HERE`](https://github.com/D-E-V-I-L-8/Ammu/blob/main/config.js#L2)
+- SESSION[`Click Here`](https://github.com/D-E-V-I-L-8/Ammu/blob/main/devil.json#L1)
+
 
 ## `SCAN QR`
 
@@ -21,15 +27,14 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/D-E-V-I-L-8/Ammu)
 
-## `CHANGE SESSION`
 
-[`Click Here`](https://github.com/D-E-V-I-L-8/Ammu/blob/main/devil.json#L1)
+## `CHANGE DYNO`
 
-## `CHANGE SETTINGS`
+`MUST TURN OFF WEB NODE SERVER AND ENABLE WORKER NPM START TO WORK YOUR BOT PROPERLY`
 
-- OWNER NUMBER [`CLICK HERE`](https://github.com/D-E-V-I-L-8/Ammu/blob/main/config.js#L2)
-- OWNER NAME [`CLICK HERE`](https://github.com/D-E-V-I-L-8/Ammu/blob/main/plugins/menu.js#L187)
-
+<p align="center">
+  <a href="https://github.com/D-E-V-I-L-8/Ammu"><img src="https://telegra.ph/file/67b8d38887cfcb6508226.jpg" />
+</p>
 ----------
 
 ## Developers
