@@ -1,0 +1,137 @@
+{
+  "users": {
+    "919656459062@s.whatsapp.net": {
+      "exp": 9998736531,
+      "limit": 999999,
+      "lastclaim": 0,
+      "registered": true,
+      "name": "ī.am/ꪶ͢ᴅᴇᴠɪʟꫂ⁩⁴⁰⁴⁩",
+      "age": 18,
+      "regTime": 1640580049369,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "level": 999999,
+      "call": 0,
+      "role": "HACKER⁴⁰⁴",
+      "autolevelup": false,
+      "pc": 0,
+      "warning": 0,
+      "joincount": 0,
+      "primogem": 0,
+      "mora": 0,
+      "cxp": 0,
+      "axp": 0
+    },
+    "918943482624@s.whatsapp.net": {
+      "exp": 11,
+      "limit": 10,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "+91 89434 82624",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "level": 0,
+      "call": 0,
+      "role": "Warrior V",
+      "autolevelup": false,
+      "pc": 0,
+      "warning": 0,
+      "joincount": 0,
+      "primogem": 0,
+      "mora": 0,
+      "cxp": 0,
+      "axp": 0
+    },
+    "17014197451@s.whatsapp.net": {
+      "exp": 0,
+      "limit": 10,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "ī.am/ꪶ͢ᴀᴍᴍᴜꫂ⁩",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "level": 0,
+      "call": 0,
+      "role": "Bronze",
+      "autolevelup": false,
+      "pc": 0,
+      "warning": 0,
+      "joincount": 0,
+      "primogem": 0,
+      "mora": 0,
+      "cxp": 0,
+      "axp": 0
+    }
+  },
+  "chats": {
+    "919656459062@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "descUpdate": true,
+      "stiker": false,
+      "delete": true,
+      "antiLink": false,
+      "expired": 0,
+      "antiBadword": true,
+      "viewonce": true
+    },
+    "120363020483218228@g.us": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "descUpdate": true,
+      "stiker": false,
+      "delete": true,
+      "antiLink": false,
+      "expired": 0,
+      "antiBadword": true,
+      "viewonce": true
+    }
+  },
+  "stats": {
+    "menu.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1640580011030,
+      "lastSuccess": 1640580011030
+    },
+    "register.js": {
+      "total": 3,
+      "success": 1,
+      "last": 1640580049369,
+      "lastSuccess": 1640580049369
+    }
+  },
+  "msgs": {},
+  "sticker": {},
+  "settings": {
+    "17014197451@s.whatsapp.net": {
+      "anon": true,
+      "anticall": true,
+      "antispam": true,
+      "antitroli": true,
+      "backup": false,
+      "backupDB": 0,
+      "groupOnly": false,
+      "jadibot": false,
+      "nsfw": true,
+      "status": 1640580049257
+    }
+  }
+}
