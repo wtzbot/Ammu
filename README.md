@@ -41,6 +41,6 @@
 
    [`DEVIL`](https://github.com/D-E-V-I-L-8)
 
-   `Developer`
+   `RE-DEVELOPER`
                                   
   </div
