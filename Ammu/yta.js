@@ -1,51 +1,33 @@
 let limit = 30
-let yts = require('yt-search')
-let fetch = require('node-fetch')
-const { servers, yta, ytv } = require('../lib/y2mate')
-let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
-  if (!text) throw 'ᴡʜᴀᴛ ᴀʀᴇ ʏᴏᴜ ʟᴏᴏᴋɪɴɢ ғᴏʀ?'
+const { servers, yta } = require('../lib/y2mate')
+let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
+  if (!args || !args[0]) throw `Example:\n${usedPrefix + command} https://www.youtube.com/watch`
   let chat = global.db.data.chats[m.chat]
-  let results = await yts(text)
-  let vid = results.all.find(video => video.seconds < 3600)
-  if (!vid) throw 'ᴠɪᴅᴇᴏ/ᴀᴜᴅɪᴏ ɴᴏᴛ ғᴏᴜɴᴅ'
-  let isVideo = /2$/.test(command)
-  let yt = false
-  let usedServer = servers[0]
-  for (let i in servers) {
-    let server = servers[i]
-    try {
-      yt = await (isVideo ? ytv : yta)(vid.url, server)
-      usedServer = server
-      break
-    } catch (e) {
-      m.reply(`Server ${server} error!${servers.length >= i + 1 ? '' : '\nᴛʀʏ ᴀɴᴏᴛʜᴇʀ sᴇʀᴠᴇʀ...'}`)
-    }
-  }
-  if (yt === false) throw 'ᴀʟʟ sᴇʀᴠᴇʀs ᴄᴀɴ°ɴᴛ :/'
-  let { dl_link, thumb, title, filesize, filesizeF } = yt
+  let server = (args[1] || servers[0]).toLowerCase()
+  let { dl_link, thumb, title, filesize, filesizeF } = await yta(args[0], servers.includes(server) ? server : servers[0])
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
-  conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
-*ᴛɪᴛʟᴇ:* ${title}
-*sɪᴢᴇ:* ${filesizeF}
-*ᴡᴀɪᴛ ᴀ ꜱᴇᴄ 👩‍💻*
-${watermark}
-`.trim(), m)
-let _thumb = {}
-try { if (isVideo) _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
-catch (e) { }
-if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp' + (3 + /2$/.test(command)), `
-*ᴛɪᴛʟᴇ:* ${title}
-*ғɪʟᴇ sɪᴢᴇ:* ${filesizeF}
-*sᴇʀᴠᴇʀ:* ${usedServer}
-`.trim(), m, false,  {
-  ..._thumb,
-  asDocument: chat.useDocument
-})
+  m.reply(isLimit ? `File Size: ${filesizeF}\nFile size above ${limit} MB, download it yourself: ${dl_link}` : "*ＤＯＷＮＬＯＡＤＩＮＧ . . .*")
+  if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp3', `
+*Title:* ${title}
+*File Size:* ${filesizeF}
+`.trim(), m, null, {
+    asDocument: chat.useDocument, mimetype: 'audio/mp4'
+  })
 }
-handler.help = ['play', 'play2'].map(v => v + ' <search>')
+handler.help = ['mp3', 'a'].map(v => 'yt' + v + ` <url> [server: ${servers.join(', ')}]`)
 handler.tags = ['downloader']
-handler.command = /^yta?$/i
+handler.command = /^yta$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
 
+handler.admin = false
+handler.botAdmin = false
+
+handler.fail = null
 handler.exp = 0
+handler.limit = true
 
 module.exports = handler
