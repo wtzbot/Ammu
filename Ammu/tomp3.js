@@ -20,7 +20,7 @@ let handler = async (m, { conn }) => {
 		fs.unlinkSync(ran)
 	})
 }
-handler.help = ['extract','tomp3']
+handler.help = ['mp3']
 handler.tags = ['audio']
 handler.command = /^(mp3)$/i
 handler.owner = false
