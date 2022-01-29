@@ -1,4 +1,5 @@
 const { toPTT } = require('../lib/converter')
+const { MessageType } = require('@adiwajshing/baileys')
 
 let handler = async (m, { conn, usedPrefix, command }) => {
   let q = m.quoted ? m.quoted : m
@@ -6,9 +7,12 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   if (!/video|audio/.test(mime)) throw `Reply the audio you want to convert to a voice note with the command *${usedPrefix + command}*`
   let media = await q.download()
   let audio = await toPTT(media, 'mp4')
-  conn.sendFile(m.chat, audio, '', '', m, 1, { mimetype: 'audio/mp4' })
+  conn.sendMessage(m.chat, audio, MessageType.audio, {
+    quoted: m,
+    ptt: true
+  })
 }
-handler.help = ['tovn']
+handler.help = ['tovn (reply)']
 handler.tags = ['audio']
 
 handler.command = /^to(vn|(ptt)?)$/i
