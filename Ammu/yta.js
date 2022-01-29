@@ -8,13 +8,7 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
 	let json = await (await fetch(`https://yt-downloader.akkun3704.repl.co/yt?url=${args[0]}`)).json()
 	let res = await (await fetch(dl_link)).buffer()
 	let isLimit = (isPrems || isOwner ? 99 : limit) * 1000000 < res.length
-	conn.sendFile(m.chat, `https://i.ytimg.com/vi/${json.result.videoDetails.videoId}/0.jpg`, 'thumbnail.jpg', `
-*Title:* ${json.result.videoDetails.title}
-*Upload:* ${json.result.videoDetails.uploadDate}
-*Views:* ${json.result.videoDetails.viewCount}
-*Likes:* ${json.result.videoDetails.likes}
-*${isLimit ? 'Use ': ''}Link:* ${dl_link}
-`.trim(), m)
+  conn.reply(m.chat,' ```ＤＯＷＮＬＯＡＤＩＮＧ...```', m)
 	if (!isLimit) conn.sendMessage(m.chat, res, chat.useDocument ? 'documentMessage' : 'audioMessage', { quoted: m, filename: json.result.videoDetails.title + '.mp3', mimetype: 'audio/mp4' })
 }
 handler.help = ['mp3', 'a'].map(v => 'yt' + v)
@@ -23,4 +17,3 @@ handler.command = /^yt(a|mp3)$/i
 handler.limit = true
 
 module.exports = handler
-
