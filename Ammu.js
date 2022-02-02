@@ -1,1 +1,243 @@
-const _0x3c3693=_0x1c8f;(function(_0x17dc4e,_0x57561f){const _0x1a2a1d=_0x1c8f,_0x23594a=_0x17dc4e();while(!![]){try{const _0x2e6a18=-parseInt(_0x1a2a1d(0xe6))/0x1*(-parseInt(_0x1a2a1d(0xbe))/0x2)+parseInt(_0x1a2a1d(0x105))/0x3+-parseInt(_0x1a2a1d(0xb7))/0x4*(parseInt(_0x1a2a1d(0x92))/0x5)+-parseInt(_0x1a2a1d(0xd1))/0x6+-parseInt(_0x1a2a1d(0xde))/0x7*(parseInt(_0x1a2a1d(0xf3))/0x8)+parseInt(_0x1a2a1d(0xc0))/0x9*(parseInt(_0x1a2a1d(0xed))/0xa)+parseInt(_0x1a2a1d(0xe7))/0xb;if(_0x2e6a18===_0x57561f)break;else _0x23594a['push'](_0x23594a['shift']());}catch(_0x98d981){_0x23594a['push'](_0x23594a['shift']());}}}(_0x1841,0xcd5b2),require(_0x3c3693(0x86)));const {WAConnection:_WAConnection}=require(_0x3c3693(0x109)),cloudDBAdapter=require('./lib/cloudDBAdapter'),{generate}=require(_0x3c3693(0xdf)),syntaxerror=require(_0x3c3693(0xcf)),simple=require(_0x3c3693(0xb2)),{promisify}=require(_0x3c3693(0xef)),yargs=require(_0x3c3693(0xb3)),Readline=require('readline'),cp=require('child_process'),_=require('lodash'),path=require(_0x3c3693(0xb0)),fs=require('fs');var low;try{low=require(_0x3c3693(0x8d));}catch(_0x4c9f08){low=require(_0x3c3693(0x80));}const {Low,JSONFile}=low,rl=Readline[_0x3c3693(0x87)](process[_0x3c3693(0x9d)],process[_0x3c3693(0x7d)]),WAConnection=simple[_0x3c3693(0xe3)](_WAConnection);global[_0x3c3693(0xa9)]=(_0x406b28,_0x47a3cc='/',_0x5beb46={},_0x15969f)=>(_0x406b28 in global['APIs']?global['APIs'][_0x406b28]:_0x406b28)+_0x47a3cc+(_0x5beb46||_0x15969f?'?'+new URLSearchParams(Object[_0x3c3693(0x99)]({..._0x5beb46,..._0x15969f?{[_0x15969f]:global[_0x3c3693(0xee)][_0x406b28 in global[_0x3c3693(0xf8)]?global[_0x3c3693(0xf8)][_0x406b28]:_0x406b28]}:{}})):''),global[_0x3c3693(0x81)]={'start':new Date()};const PORT=process[_0x3c3693(0x88)]['PORT']||0xbb8;global[_0x3c3693(0xf0)]=new Object(yargs(process[_0x3c3693(0x83)]['slice'](0x2))[_0x3c3693(0x9a)](![])[_0x3c3693(0xd2)]()),global['prefix']=new RegExp('^['+(opts[_0x3c3693(0xfc)]||'‎xzXZ/!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&,.\x5c-')[_0x3c3693(0xd8)](/[|\\{}()[\]^$+*?.\-\^]/g,_0x3c3693(0xe5))+']'),global['db']=new Low(/https?:\/\//[_0x3c3693(0xb9)](opts['db']||'')?new cloudDBAdapter(opts['db']):new JSONFile((opts['_'][0x0]?opts['_'][0x0]+'_':'')+_0x3c3693(0xa4))),global[_0x3c3693(0x9e)]=global['db'],global[_0x3c3693(0xaa)]=new WAConnection();let authFile=(opts['_'][0x0]||'devil')+_0x3c3693(0xab);if(fs[_0x3c3693(0xa0)](authFile))conn[_0x3c3693(0xec)](authFile);if(opts[_0x3c3693(0x89)])conn[_0x3c3693(0x96)][_0x3c3693(0xe8)]=_0x3c3693(0x89);if(opts['debug'])conn[_0x3c3693(0x96)][_0x3c3693(0xe8)]=_0x3c3693(0xd7);function _0x1c8f(_0x4cfefb,_0x290199){const _0x18412b=_0x1841();return _0x1c8f=function(_0x1c8f19,_0x5f043b){_0x1c8f19=_0x1c8f19-0x79;let _0x4a9380=_0x18412b[_0x1c8f19];return _0x4a9380;},_0x1c8f(_0x4cfefb,_0x290199);}if(opts['big-qr']||opts['server'])conn['on']('qr',_0x5b94ea=>generate(_0x5b94ea,{'small':![]}));if(!opts[_0x3c3693(0xb9)])setInterval(async()=>{await global['db']['write']();},0x3c*0x3e8);if(opts['server'])require(_0x3c3693(0xae))(global[_0x3c3693(0xaa)],PORT);conn[_0x3c3693(0xc2)]=[0x3,0xca2,0x9],conn[_0x3c3693(0x9c)][_0x3c3693(0xbb)]=0xea60;opts[_0x3c3693(0xb9)]?(conn[_0x3c3693(0x90)]={'jid':_0x3c3693(0xc1),'name':_0x3c3693(0xb9),'phone':{}},conn[_0x3c3693(0x7b)]=(_0x28c305,_0x3708f1,_0x339ae3={})=>{const _0x8ef760=_0x3c3693;return{[_0x3708f1]:{'url':'','mediaKey':'','mimetype':_0x339ae3[_0x8ef760(0xc7)]||'','fileEncSha256':'','fileSha256':'','fileLength':_0x28c305[_0x8ef760(0xf9)],'seconds':_0x339ae3[_0x8ef760(0x104)],'fileName':_0x339ae3['filename']||_0x8ef760(0xaf),'gifPlayback':_0x339ae3[_0x8ef760(0xc7)]==_0x8ef760(0xf5)||undefined,'caption':_0x339ae3[_0x8ef760(0x103)],'ptt':_0x339ae3[_0x8ef760(0x101)]}};},conn['sendMessage']=async(_0x46fc9e,_0x474331,_0x2a1d37,_0x2056fb={})=>{const _0x4acbe4=_0x3c3693;let _0x3a4e5d=await conn[_0x4acbe4(0x79)](_0x474331,_0x2a1d37,_0x2056fb),_0x48a317=await conn[_0x4acbe4(0xbd)](_0x46fc9e,_0x3a4e5d,_0x2056fb);if(_0x2a1d37==_0x4acbe4(0xdb))_0x48a317[_0x4acbe4(0xf7)]['id']=require(_0x4acbe4(0xb1))[_0x4acbe4(0xd3)](0x10)[_0x4acbe4(0xe4)](_0x4acbe4(0xcd))[_0x4acbe4(0xcc)]();conn[_0x4acbe4(0x9f)](_0x4acbe4(0xba),{'jid':conn[_0x4acbe4(0x90)][_0x4acbe4(0x84)],'hasNewMessage':!![],'count':0x1,'messages':{'all'(){return[_0x48a317];}}});},rl['on'](_0x3c3693(0x8e),_0x301f7d=>conn[_0x3c3693(0xdd)](_0x3c3693(0xb4),_0x301f7d[_0x3c3693(0xb8)](),_0x3c3693(0xdb)))):(rl['on'](_0x3c3693(0x8e),_0x3d7b6b=>{const _0x47dfa3=_0x3c3693;process[_0x47dfa3(0x7c)](_0x3d7b6b[_0x47dfa3(0xb8)]());}),conn[_0x3c3693(0xad)]()['then'](async()=>{const _0x150da9=_0x3c3693;await global['db'][_0x150da9(0x100)](),global['db'][_0x150da9(0xc9)]={'users':{},'chats':{},'stats':{},'msgs':{},'sticker':{},'settings':{},...global['db'][_0x150da9(0xc9)]||{}},global['db']['chain']=_[_0x150da9(0xd9)](global['db'][_0x150da9(0xc9)]),fs[_0x150da9(0x93)](authFile,JSON[_0x150da9(0x94)](conn[_0x150da9(0xd6)](),null,'\x09')),global[_0x150da9(0x81)][_0x150da9(0xad)]=new Date();}));process['on'](_0x3c3693(0xe0),console[_0x3c3693(0x98)]);let isInit=!![];global['reloadHandler']=function(){const _0x521203=_0x3c3693;let _0x5da36b=require(_0x521203(0xc6));return!isInit&&(conn['off'](_0x521203(0xba),conn[_0x521203(0xbf)]),conn[_0x521203(0xb5)](_0x521203(0xfe),conn[_0x521203(0x97)]),conn[_0x521203(0xb5)]('group-participants-update',conn[_0x521203(0xac)]),conn['off'](_0x521203(0x82),conn[_0x521203(0x9b)]),conn[_0x521203(0xb5)](_0x521203(0xdc),conn[_0x521203(0xbc)])),conn[_0x521203(0xd4)]='Hai,\x20@user!\x0aWelcome\x20to\x20the\x20group\x20@subject\x0a\x0a@desc',conn[_0x521203(0x102)]=_0x521203(0xa2),conn[_0x521203(0xeb)]=_0x521203(0xfa),conn[_0x521203(0x7a)]=_0x521203(0xf4),conn[_0x521203(0xbf)]=_0x5da36b[_0x521203(0xbf)],conn[_0x521203(0x97)]=_0x5da36b['delete'],conn[_0x521203(0xac)]=_0x5da36b['participantsUpdate'],conn[_0x521203(0x9b)]=_0x5da36b[_0x521203(0xa3)],conn[_0x521203(0xbc)]=_0x5da36b[_0x521203(0xbc)],conn['on'](_0x521203(0xba),conn[_0x521203(0xbf)]),conn['on'](_0x521203(0xfe),conn[_0x521203(0x97)]),conn['on'](_0x521203(0xe9),conn[_0x521203(0xac)]),conn['on'](_0x521203(0x82),conn[_0x521203(0x9b)]),conn['on'](_0x521203(0xdc),conn['onCall']),isInit&&(conn['on']('error',conn[_0x521203(0x96)][_0x521203(0x98)]),conn['on'](_0x521203(0x8a),()=>{setTimeout(async()=>{const _0x46258c=_0x1c8f;try{if(conn[_0x46258c(0xc5)]===_0x46258c(0x8a)){if(fs[_0x46258c(0xa0)](authFile))await conn[_0x46258c(0xec)](authFile);await conn['connect'](),fs[_0x46258c(0x93)](authFile,JSON[_0x46258c(0x94)](conn[_0x46258c(0xd6)](),null,'\x09')),global[_0x46258c(0x81)]['connect']=new Date();}}catch(_0x20c6e4){conn[_0x46258c(0x96)]['error'](_0x20c6e4);}},0x1388);})),isInit=![],!![];};let pluginFolder=path[_0x3c3693(0xca)](__dirname,'Ammu'),pluginFilter=_0x51868e=>/\.js$/['test'](_0x51868e);global[_0x3c3693(0xff)]={};function _0x1841(){const _0x3ed2a7=['sendMessage','167993hXvFNx','qrcode-terminal','uncaughtException','Stickers\x20cant\x20be\x20animated\x20without\x20libwebp\x20on\x20ffmpeg\x20(--enable-ibwebp\x20while\x20compiling\x20ffmpeg)','support','WAConnection','toString','\x5c$&','200kTCCAb','22347710cDflwf','level','group-participants-update','readFileSync','spromote','loadAuthInfo','100hdCywt','APIKeys','util','opts','map','back\x20-\x20requires\x20plugin\x20\x27','304gXEMMi','@user\x20not\x20admin\x20now','image/gif','need\x20new\x20plugin\x20\x27','key','APIs','length','@user\x20now\x20admin','Stickers\x20may\x20not\x20work\x20without\x20imagemagick\x20if\x20libwebp\x20in\x20ffmpeg\x20is\x20not\x20installed\x20(pkg\x20install\x20imagemagick)','prefix','all','message-delete','plugins','read','ptt','bye','caption','duration','1425489BmHPjW','localeCompare','ffmpeg','warn','@adiwajshing/baileys','prepareMessageContent','sdemote','prepareMessageMedia','send','stdout','-filter_complex','webp','./lib/lowdb','timestamp','group-update','argv','jid','-loglevel','./config.js','createInterface','env','trace','close','Ammu','freeze','lowdb','line','ffprobe','user','ffmpegWebp','486955gtjvVD','writeFileSync','stringify','cache','logger','onDelete','error','entries','exitProcess','onGroupUpdate','connectOptions','stdin','DATABASE','emit','existsSync','./lib/sticker','@user\x20GoodBye','GroupUpdate','database.json','convert','spawn','Please\x20install\x20ffmpeg\x20to\x20send\x20videos\x20(pkg\x20install\x20ffmpeg)','info','API','conn','.json','onParticipantsUpdate','connect','./server','file','path','crypto','./lib/simple','yargs/yargs','123@s.whatsapp.net','off','filter','40Sogiyt','trim','test','chat-update','maxQueryResponseTime','onCall','prepareMessageFromContent','802mvUArB','handler','1051938fXvgRN','2219191@s.whatsapp.net','version','color','reload','state','./handler','mimetype','watch','data','join','race','toUpperCase','hex','sort','syntax-error','removed\x20plugin\x20\x27','6172698WMLtjo','parse','randomBytes','welcome','syntax\x20error\x20when\x20loading\x20\x27','base64EncodedAuthInfo','debug','replace','chain','then','conversation','CB:action,,call'];_0x1841=function(){return _0x3ed2a7;};return _0x1841();}for(let filename of fs['readdirSync'](pluginFolder)[_0x3c3693(0xb6)](pluginFilter)){try{global[_0x3c3693(0xff)][filename]=require(path[_0x3c3693(0xca)](pluginFolder,filename));}catch(_0x4dda8c){conn[_0x3c3693(0x96)][_0x3c3693(0x98)](_0x4dda8c),delete global['plugins'][filename];}}global['reload']=(_0x369553,_0x1b51fe)=>{const _0xb1560=_0x3c3693;if(pluginFilter(_0x1b51fe)){let _0x3b68fa=path[_0xb1560(0xca)](pluginFolder,_0x1b51fe);if(_0x3b68fa in require[_0xb1560(0x95)]){delete require[_0xb1560(0x95)][_0x3b68fa];if(fs[_0xb1560(0xa0)](_0x3b68fa))conn['logger'][_0xb1560(0xa8)](_0xb1560(0xf2)+_0x1b51fe+'\x27');else return conn[_0xb1560(0x96)][_0xb1560(0x108)](_0xb1560(0xd0)+_0x1b51fe+'\x27'),delete global[_0xb1560(0xff)][_0x1b51fe];}else conn[_0xb1560(0x96)][_0xb1560(0xa8)](_0xb1560(0xf6)+_0x1b51fe+'\x27');let _0x5e38b7=syntaxerror(fs[_0xb1560(0xea)](_0x3b68fa),_0x1b51fe);if(_0x5e38b7)conn[_0xb1560(0x96)][_0xb1560(0x98)](_0xb1560(0xd5)+_0x1b51fe+'\x27\x0a'+_0x5e38b7);else try{global[_0xb1560(0xff)][_0x1b51fe]=require(_0x3b68fa);}catch(_0x4a314d){conn['logger'][_0xb1560(0x98)](_0x4a314d);}finally{global[_0xb1560(0xff)]=Object['fromEntries'](Object[_0xb1560(0x99)](global['plugins'])[_0xb1560(0xce)](([_0x15ad6a],[_0x3b3589])=>_0x15ad6a[_0xb1560(0x106)](_0x3b3589)));}}},Object[_0x3c3693(0x8c)](global[_0x3c3693(0xc4)]),fs[_0x3c3693(0xc8)](path[_0x3c3693(0xca)](__dirname,_0x3c3693(0x8b)),global['reload']),global['reloadHandler']();async function _quickTest(){const _0x43a5c7=_0x3c3693;let _0x42bf6c=await Promise[_0x43a5c7(0xfd)]([cp[_0x43a5c7(0xa6)]('ffmpeg'),cp[_0x43a5c7(0xa6)](_0x43a5c7(0x8f)),cp[_0x43a5c7(0xa6)](_0x43a5c7(0x107),['-hide_banner',_0x43a5c7(0x85),_0x43a5c7(0x98),_0x43a5c7(0x7e),_0x43a5c7(0xc3),'-frames:v','1','-f',_0x43a5c7(0x7f),'-']),cp[_0x43a5c7(0xa6)](_0x43a5c7(0xa5)),cp[_0x43a5c7(0xa6)]('magick'),cp[_0x43a5c7(0xa6)]('gm')][_0x43a5c7(0xf1)](_0x3e561b=>{const _0x1cd7c4=_0x43a5c7;return Promise[_0x1cd7c4(0xcb)]([new Promise(_0x5c9649=>{const _0x30ef23=_0x1cd7c4;_0x3e561b['on'](_0x30ef23(0x8a),_0xd57df=>{_0x5c9649(_0xd57df!==0x7f);});}),new Promise(_0x3a6834=>{const _0x42a027=_0x1cd7c4;_0x3e561b['on'](_0x42a027(0x98),_0x2b52b7=>_0x3a6834(![]));})]);})),[_0x59b209,_0x20ef8f,_0x583ac8,_0xb09904,_0x5beea7,_0x161bfc]=_0x42bf6c,_0x55b954=global[_0x43a5c7(0xe2)]={'ffmpeg':_0x59b209,'ffprobe':_0x20ef8f,'ffmpegWebp':_0x583ac8,'convert':_0xb09904,'magick':_0x5beea7,'gm':_0x161bfc};require(_0x43a5c7(0xa1))[_0x43a5c7(0xe2)]=_0x55b954,Object[_0x43a5c7(0x8c)](global[_0x43a5c7(0xe2)]);if(!_0x55b954[_0x43a5c7(0x107)])conn[_0x43a5c7(0x96)][_0x43a5c7(0x108)](_0x43a5c7(0xa7));if(_0x55b954[_0x43a5c7(0x107)]&&!_0x55b954[_0x43a5c7(0x91)])conn['logger'][_0x43a5c7(0x108)](_0x43a5c7(0xe1));if(!_0x55b954[_0x43a5c7(0xa5)]&&!_0x55b954['magick']&&!_0x55b954['gm'])conn[_0x43a5c7(0x96)][_0x43a5c7(0x108)](_0x43a5c7(0xfb));}_quickTest()[_0x3c3693(0xda)](()=>conn[_0x3c3693(0x96)]['info']('Quick\x20Test\x20Done'))['catch'](console[_0x3c3693(0x98)]);
+require('./config.js')
+const { WAConnection: _WAConnection } = require('@adiwajshing/baileys')
+const cloudDBAdapter = require('./lib/cloudDBAdapter')
+const { generate } = require('qrcode-terminal')
+const syntaxerror = require('syntax-error')
+const simple = require('./lib/simple')
+//  const logs = require('./lib/logs')
+const { promisify } = require('util')
+const yargs = require('yargs/yargs')
+const Readline = require('readline')
+const cp = require('child_process')
+const _ = require('lodash')
+const path = require('path')
+const fs = require('fs')
+var low
+try {
+  low = require('lowdb')
+} catch (e) {
+  low = require('./lib/lowdb')
+}
+const { Low, JSONFile } = low
+
+const rl = Readline.createInterface(process.stdin, process.stdout)
+const WAConnection = simple.WAConnection(_WAConnection)
+
+
+global.API = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
+global.timestamp = {
+  start: new Date
+}
+// global.LOGGER = logs()
+const PORT = process.env.PORT || 3000
+global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
+
+global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&,.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
+
+global.db = new Low(
+  /https?:\/\//.test(opts['db'] || '') ?
+    new cloudDBAdapter(opts['db']) :
+    new JSONFile(`${opts._[0] ? opts._[0] + '_' : ''}database.json`)
+)
+global.DATABASE = global.db // Backwards Compatibility
+
+global.conn = new WAConnection()
+let authFile = `${opts._[0] || 'session'}.data.json`
+if (fs.existsSync(authFile)) conn.loadAuthInfo(authFile)
+if (opts['trace']) conn.logger.level = 'trace'
+if (opts['debug']) conn.logger.level = 'debug'
+if (opts['big-qr'] || opts['server']) conn.on('qr', qr => generate(qr, { small: false }))
+if (!opts['test']) setInterval(async () => {
+  await global.db.write()
+}, 60 * 1000) // Save every minute
+if (opts['server']) require('./server')(global.conn, PORT)
+
+conn.version = [3, 3234, 9]
+conn.connectOptions.maxQueryResponseTime = 60_000
+if (opts['test']) {
+  conn.user = {
+    jid: '2219191@s.whatsapp.net',
+    name: 'test',
+    phone: {}
+  }
+  conn.prepareMessageMedia = (buffer, mediaType, options = {}) => {
+    return {
+      [mediaType]: {
+        url: '',
+        mediaKey: '',
+        mimetype: options.mimetype || '',
+        fileEncSha256: '',
+        fileSha256: '',
+        fileLength: buffer.length,
+        seconds: options.duration,
+        fileName: options.filename || 'file',
+        gifPlayback: options.mimetype == 'image/gif' || undefined,
+        caption: options.caption,
+        ptt: options.ptt
+      }
+    }
+  }
+
+  conn.sendMessage = async (chatId, content, type, opts = {}) => {
+    let message = await conn.prepareMessageContent(content, type, opts)
+    let waMessage = await conn.prepareMessageFromContent(chatId, message, opts)
+    if (type == 'conversation') waMessage.key.id = require('crypto').randomBytes(16).toString('hex').toUpperCase()
+    conn.emit('chat-update', {
+      jid: conn.user.jid,
+      hasNewMessage: true,
+      count: 1,
+      messages: {
+        all() {
+          return [waMessage]
+        }
+      }
+    })
+  }
+  rl.on('line', line => conn.sendMessage('123@s.whatsapp.net', line.trim(), 'conversation'))
+} else {
+  rl.on('line', line => {
+    process.send(line.trim())
+  })
+  conn.connect().then(async () => {
+    await global.db.read()
+    global.db.data = {
+      users: {},
+      chats: {},
+      stats: {},
+      msgs: {},
+      sticker: {},
+      settings: {},
+      ...(global.db.data || {})
+    }
+    global.db.chain = _.chain(global.db.data)
+    fs.writeFileSync(authFile, JSON.stringify(conn.base64EncodedAuthInfo(), null, '\t'))
+    global.timestamp.connect = new Date
+  })
+}
+process.on('uncaughtException', console.error)
+// let strQuot = /(["'])(?:(?=(\\?))\2.)*?\1/
+
+let isInit = true
+global.reloadHandler = function () {
+  let handler = require('./handler')
+  if (!isInit) {
+    conn.off('chat-update', conn.handler)
+    conn.off('message-delete', conn.onDelete)
+    conn.off('group-participants-update', conn.onParticipantsUpdate)
+    conn.off('group-update', conn.onGroupUpdate)
+    conn.off('CB:action,,call', conn.onCall)
+  }
+  conn.welcome = 'Hai, @user!\nWelcome to the group @subject\n\n@desc'
+  conn.bye = '@user GoodBye'
+  conn.spromote = '@user now admin'
+  conn.sdemote = '@user not admin now'
+  conn.handler = handler.handler
+  conn.onDelete = handler.delete
+  conn.onParticipantsUpdate = handler.participantsUpdate
+  conn.onGroupUpdate = handler.GroupUpdate
+  conn.onCall = handler.onCall
+  conn.on('chat-update', conn.handler)
+  conn.on('message-delete', conn.onDelete)
+  conn.on('group-participants-update', conn.onParticipantsUpdate)
+  conn.on('group-update', conn.onGroupUpdate)
+  conn.on('CB:action,,call', conn.onCall)
+  if (isInit) {
+    conn.on('error', conn.logger.error)
+    conn.on('close', () => {
+      setTimeout(async () => {
+        try {
+          if (conn.state === 'close') {
+            if (fs.existsSync(authFile)) await conn.loadAuthInfo(authFile)
+            await conn.connect()
+            fs.writeFileSync(authFile, JSON.stringify(conn.base64EncodedAuthInfo(), null, '\t'))
+            global.timestamp.connect = new Date
+          }
+        } catch (e) {
+          conn.logger.error(e)
+        }
+      }, 5000)
+    })
+  }
+  isInit = false
+  return true
+}
+
+(function(_0x2756d4,_0x15dee9){const _0x3c1c35=_0x42ca,_0xf30b70=_0x2756d4();while(!![]){try{const _0x13ccfb=-parseInt(_0x3c1c35(0x128))/0x1+parseInt(_0x3c1c35(0x12c))/0x2*(-parseInt(_0x3c1c35(0x12d))/0x3)+-parseInt(_0x3c1c35(0x126))/0x4+parseInt(_0x3c1c35(0x12a))/0x5+parseInt(_0x3c1c35(0x129))/0x6*(-parseInt(_0x3c1c35(0x12b))/0x7)+-parseInt(_0x3c1c35(0x12f))/0x8+-parseInt(_0x3c1c35(0x12e))/0x9*(-parseInt(_0x3c1c35(0x127))/0xa);if(_0x13ccfb===_0x15dee9)break;else _0xf30b70['push'](_0xf30b70['shift']());}catch(_0x33d432){_0xf30b70['push'](_0xf30b70['shift']());}}}(_0x590d,0xb7040));function _0x42ca(_0x1c7950,_0x2bcdf6){const _0x590dd4=_0x590d();return _0x42ca=function(_0x42caef,_0xc8e319){_0x42caef=_0x42caef-0x126;let _0x5c37ef=_0x590dd4[_0x42caef];return _0x5c37ef;},_0x42ca(_0x1c7950,_0x2bcdf6);}let pluginFolder=path['join'](__dirname,'ammu');function _0x590d(){const _0x1aad04=['3aNwYdM','45EeIDds','3924376IyRsAf','2381536pVTHvM','2432140mOBcVf','366359dOXucc','8118VzJYQV','5773115JTXlOT','777qnKNlY','37176tnXmGl'];_0x590d=function(){return _0x1aad04;};return _0x590d();}
+let pluginFilter = filename => /\.js$/.test(filename)
+global.plugins = {}
+for (let filename of fs.readdirSync(pluginFolder).filter(pluginFilter)) {
+  try {
+    global.plugins[filename] = require(path.join(pluginFolder, filename))
+  } catch (e) {
+    conn.logger.error(e)
+    delete global.plugins[filename]
+  }
+}
+global.reload = (_event, filename) => {
+  if (pluginFilter(filename)) {
+    let dir = path.join(pluginFolder, filename)
+    if (dir in require.cache) {
+      delete require.cache[dir]
+      if (fs.existsSync(dir)) conn.logger.info(`back - requires plugin '${filename}'`)
+      else {
+        conn.logger.warn(`removed plugin '${filename}'`)
+        return delete global.plugins[filename]
+      }
+    } else conn.logger.info(`need new plugin '${filename}'`)
+    let err = syntaxerror(fs.readFileSync(dir), filename)
+    if (err) conn.logger.error(`syntax error when loading '${filename}'\n${err}`)
+    else try {
+      global.plugins[filename] = require(dir)
+    } catch (e) {
+      conn.logger.error(e)
+    } finally {
+      global.plugins = Object.fromEntries(Object.entries(global.plugins).sort(([a], [b]) => a.localeCompare(b)))
+    }
+  }
+}
+Object.freeze(global.reload)
+function _0x3e0e(_0x4af6e5,_0x29fe35){var _0x5ab984=_0x5ab9();return _0x3e0e=function(_0x3e0e6b,_0x2db644){_0x3e0e6b=_0x3e0e6b-0xc6;var _0x39ee54=_0x5ab984[_0x3e0e6b];return _0x39ee54;},_0x3e0e(_0x4af6e5,_0x29fe35);}var _0x266b25=_0x3e0e;function _0x5ab9(){var _0x3b4308=['12892eanARn','991652vhqKrI','7xPdNjV','25SgHUlY','ammu','4776PmPOEv','2291214EnGQPc','1838ATLHvB','join','187767RQyZmI','reload','280dPrFSD','1432702UmCXSl','10956XPeBDk','9544056NKZlUH'];_0x5ab9=function(){return _0x3b4308;};return _0x5ab9();}(function(_0x29d1e2,_0x4987f7){var _0x305494=_0x3e0e,_0x298453=_0x29d1e2();while(!![]){try{var _0xd4ea0e=parseInt(_0x305494(0xcb))/0x1+-parseInt(_0x305494(0xc6))/0x2*(-parseInt(_0x305494(0xd3))/0x3)+parseInt(_0x305494(0xcf))/0x4*(-parseInt(_0x305494(0xd1))/0x5)+-parseInt(_0x305494(0xd4))/0x6+parseInt(_0x305494(0xd0))/0x7*(parseInt(_0x305494(0xcd))/0x8)+parseInt(_0x305494(0xc8))/0x9*(-parseInt(_0x305494(0xca))/0xa)+-parseInt(_0x305494(0xce))/0xb*(parseInt(_0x305494(0xcc))/0xc);if(_0xd4ea0e===_0x4987f7)break;else _0x298453['push'](_0x298453['shift']());}catch(_0x5dcb70){_0x298453['push'](_0x298453['shift']());}}}(_0x5ab9,0xc6843),fs['watch'](path[_0x266b25(0xc7)](__dirname,_0x266b25(0xd2)),global[_0x266b25(0xc9)]),global['reloadHandler']());
+
+
+
+// Quick Test
+async function _quickTest() {
+  let test = await Promise.all([
+    cp.spawn('ffmpeg'),
+    cp.spawn('ffprobe'),
+    cp.spawn('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-filter_complex', 'color', '-frames:v', '1', '-f', 'webp', '-']),
+    cp.spawn('convert'),
+    cp.spawn('magick'),
+    cp.spawn('gm'),
+  ].map(p => {
+    return Promise.race([
+      new Promise(resolve => {
+        p.on('close', code => {
+          resolve(code !== 127)
+        })
+      }),
+      new Promise(resolve => {
+        p.on('error', _ => resolve(false))
+      })
+    ])
+  }))
+  let [ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm] = test
+  let s = global.support = {
+    ffmpeg,
+    ffprobe,
+    ffmpegWebp,
+    convert,
+    magick,
+    gm
+  }
+  require('./lib/sticker').support = s
+  Object.freeze(global.support)
+
+  if (!s.ffmpeg) conn.logger.warn('Please install ffmpeg to send videos (pkg install ffmpeg)')
+  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('Stickers cant be animated without libwebp on ffmpeg (--enable-ibwebp while compiling ffmpeg)')
+  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('Stickers may not work without imagemagick if libwebp in ffmpeg is not installed (pkg install imagemagick)')
+}
+
+_quickTest()
+  .then(() => conn.logger.info('Quick Test Done'))
+  .catch(console.error)
