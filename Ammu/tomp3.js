@@ -6,7 +6,7 @@ let handler = async (m, { conn }) => {
 	const content = JSON.stringify(m.message)
 	const type = Object.keys(m.message)[0]
 	const isVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
-	if(!isVideo) return m.reply(`*Reply video untuk di convert menjadi Audio.*`)
+	if(!isVideo) 
 	m.reply(global.wait)
 	encmedia = JSON.parse(JSON.stringify(m).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 	media = await conn.downloadAndSaveMediaMessage(encmedia)
