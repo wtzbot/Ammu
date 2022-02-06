@@ -1,20 +1,28 @@
 {
 "name": "Ammu",
   "description": "Lightweight WhatsApp Bot",
-  "repository": "https://github.com/D-E-V-I-L-8/Ammu/",
-  "logo": "https://raw.githubusercontent.com/D-E-V-I-L-8/Ammu/main/DEVIL/Ammu.jpeg",
+  "repository": "https://github.com/D-E-V-I-L-8/Ammu",
   "keywords": ["bot", "whatsapp", "whatsapp-bot"],
+
     "buildpacks": [
-        {
-            "url": "heroku/nodejs"
-        }
+
         {
 
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+            "url": "heroku/nodejs"
+
         },
 
         {
+
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+
+        },
+
+        {
+
             "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+
         }
+
     ]
 }
