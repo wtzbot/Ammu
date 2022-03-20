@@ -1,7 +1,7 @@
 #                                                               *AMMU WHATSAPP-BOT*
 
 <div align="left">
-  <img border-radius: 15px src="https://raw.githubusercontent.com/D-3-V-1-L/Ammu/main/DEVIL/icon.jpeg" width="500" height="500"/>
+  <img border-radius: 15px src="https://raw.githubusercontent.com/D-3-V-1-L/Ammu/main/DEVIL/icon.jpeg" width="300" height="300"/>
 
 ## `JOIN AMMU WHATSAPP GROUP`
 
